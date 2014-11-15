@@ -1,7 +1,6 @@
 #navbar {
-    width: 100%;
+    z-index: 2;
     position: absolute;
-    margin-top: 0;
-    background-color: #DDD;
-    z-index: 1;
+    left: 0;
+}
 }
