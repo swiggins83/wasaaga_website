@@ -7,7 +7,7 @@ $('body').mousemove(function() {
     if (timeToHide) {
         clearTimeout(countdown);
         $('#navbar').stop().animate({
-            'opacity': 0.75,
+            'opacity': 0.90,
             'left': 0
         }, 350, 'easeInOutExpo', function() {
             setCountDown();
