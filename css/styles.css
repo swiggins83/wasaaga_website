@@ -1,5 +1,5 @@
 #ghost {
-    z-index: 100;
+    z-index: 1;
     width: 100vh;
     height: 90vh;
     position: absolute;
@@ -20,7 +20,7 @@
 #navbar a {
     height: 10vh;
     display: block;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 1);
     font-size: 1.5em;
     width: 100%;
     text-overflow: ellipsis;
