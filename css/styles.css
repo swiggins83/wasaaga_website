@@ -1,30 +1,41 @@
-#ghost {
-    z-index: 1;
-    width: 100vw;
-    height: 90vh;
-    position: absolute;
+body, html {
+    margin: 0;
+    padding: 0;
 }
 
-#navbar {
-    z-index: 2;
-    position: absolute;
-    left: 0;
-    background-color: rgba(0, 0, 0, 1);
-    width: 25%;
+body {
+    background-image: url("../imgs/background.png");
+}
+
+.row {
+    margin-bottom: 0;
+}
+
+.container {
     height: 100%;
+    width: 100%;
+}
+.logo {
+    display: flex;
+    height: 10%;
 }
 
-#navbar #logo {
-    font-size: 2em;
-    border-bottom: 1px solid white;
+.player-container {
+    height:80%;
 }
 
-#navbar a {
-    min-height: 10vh;
-    display: block;
-    background-color: rgba(0, 0, 0, 1);
-    font-size: 1.5em;
-    text-overflow: ellipsis;
-    text-transform: lowercase;
-    padding: 16px;
+.player {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 62.5%;
+}
+
+.links {
+    height: 10%;
+}
+
+.links .row img {
+    height: 100%;
+    width: 100%;
 }
