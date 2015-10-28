@@ -3,21 +3,37 @@ body, html {
     padding: 0;
 }
 
-body {
-    background-image: url("../imgs/background.png");
-}
-
 .row {
     margin-bottom: 0;
+}
+
+.col {
+    padding: 0 !important;
 }
 
 .container {
     height: 100%;
     width: 100%;
 }
+
 .logo {
     display: flex;
     height: 10%;
+}
+
+.gof-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
 }
 
 .player-container {
@@ -29,6 +45,7 @@ body {
     margin-right: auto;
     width: 50%;
     height: 62.5%;
+    z-index: 1;
 }
 
 .links {
@@ -38,4 +55,9 @@ body {
 .links .row img {
     height: 100%;
     width: 100%;
+}
+
+.links img.about {
+    width: 75%;
+    margin-left: 12.5%;
 }

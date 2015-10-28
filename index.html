@@ -11,14 +11,24 @@
     </head>
     <body>
 
+        <video class="gof-video"
+            autoplay="autoplay"
+            loop="loop"
+            muted="muted"
+            preload="auto"
+            poster="imgs/poster.png">
+            <source src="vid/gof.mp4">
+        </video>
+
         <div class="row">
-            <div class="col s4">
+            <div class="col s12 row">
                 <a
                     href="#"
                     class="logo waves-effect waves-light">
-                    <img class="wasaaga" src="imgs/wasaaga.png"></img>
+                    <img class="wasaaga col s6 m5 l3" src="imgs/wasaaga.png"></img>
                 </a>
             </div>
+        </div>
 
             <div class="col s12">
                 <div class="player-container valign-wrapper">
@@ -31,7 +41,7 @@
                     <iframe
                         class="player valign center-align"
                         src="https://player.vimeo.com/video/120963619?title=1"
-                        frameborder="0">
+                        frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="">
                     </iframe>
                 </div>
             </div>
@@ -43,35 +53,32 @@
 
                         <div class="col s12 m6 l3">
                             <a
-                                href="http://wasaaga.bandcamp.com/"
+                                href="https://vimeo.com/104864175"
                                 class="waves-effect waves-light">
-
-                                <img class="bandcamp" src="imgs/download.png"></img>
-
+                                <img class="about" src="imgs/about.png"></img>
                             </a>
                         </div>
+
                         <div class="col s12 m6 l3">
                             <a
                                 href="http://wasaaga.bandcamp.com/"
                                 class="waves-effect waves-light">
-
-                                <img class="soundcloud" src="imgs/soundcloud.png"></img>
-
+                                <img class="download" src="imgs/download.png"></img>
                             </a>
                         </div>
+
                         <div class="col s12 m6 l3">
                             <a
                                 href="http://scenicrhythms.bandcamp.com/album/mr004-introvert"
                                 class="waves-effect waves-light">
-
                                 <img class="introvert" src="imgs/introvert.png"></img>
                             </a>
                         </div>
+
                         <div class="col s12 m6 l3">
                             <a
                                 href="mailto:wasaaga1@gmail.com"
                                 class="waves-effect waves-light">
-
                                 <img class="contact" src="imgs/contact.png"></img>
                             </a>
                         </div>
@@ -85,5 +92,24 @@
     </body>
 
     <script src="js/animateBar.js"></script>
+
+    <script type="text/javascript">
+
+        var move = new Image();
+
+        function loadSprite(src, callback) {
+            var sprite = new Image();
+            sprite.onload = callback;
+            sprite.src = src;
+            return sprite;
+        }
+
+        move = loadSprite("vid/gof.mp4", function() {
+            console.log("KAJSLDKJ");
+        });
+
+        console.log("haoewirh");
+
+    </script>
 
 </html>
